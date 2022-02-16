@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class RentalAddOn extends Model
 {
     use HasFactory;
+
+    public $fillable = [
+        'rental_id',
+        'add_on_id'
+    ];
 }

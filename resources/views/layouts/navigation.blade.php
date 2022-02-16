@@ -23,8 +23,8 @@
                             Contact
                         </a>
                         @guest      
-                            <x-custom.link-button-solid>Register</x-custom.link-button-solid>
-                            <x-custom.link-button-line>Login</x-custom.link-button-line>
+                            <x-custom.link-button route="register">Register</x-custom.link-button>
+                            <x-custom.link-button type="line" route="login">Login</x-custom.link-button>
                         @endguest
                     </nav>
                     <button class="lg:hidden flex flex-col ml-4">

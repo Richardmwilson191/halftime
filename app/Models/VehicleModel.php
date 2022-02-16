@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class VehicleModel extends Model
 {
     use HasFactory;
+
+    public $fillable = [
+        'brand_id',
+        'vehicle_type_id',
+        'name'
+    ];
 }

@@ -19,8 +19,8 @@
                     selection of vehicle to choose from.
                 </p>
                 <div class="flex mt-8">
-                    <x-custom.link-button-solid>Our Locations</x-custom.link-button-solid>
-                    <x-custom.link-button-line>Our Cars</x-custom.link-button-line>
+                    <x-custom.link-button>Our Locations</x-custom.link-button>
+                    <x-custom.link-button type="line">Our Cars</x-custom.link-button>
                 </div>
             </div>
             <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
