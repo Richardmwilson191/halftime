@@ -13,4 +13,14 @@ class RentalAddOn extends Model
         'rental_id',
         'add_on_id'
     ];
+
+    public function addOn()
+    {
+        return $this->hasMany(AddOn::class);
+    }
+
+    public function rental()
+    {
+        return $this->belongsTo(Rental::class);
+    }
 }

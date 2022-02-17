@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('rentals', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
             $table->foreignId('vehicle_id')->constrained();
             $table->foreignId('transaction_id')->constrained();
             $table->integer('days_rented');

@@ -13,4 +13,14 @@ class Transaction extends Model
         'user_id',
         'total'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function rentals()
+    {
+        return $this->hasMany(Rental::class);
+    }
 }

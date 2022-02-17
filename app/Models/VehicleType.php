@@ -12,4 +12,9 @@ class VehicleType extends Model
     public $fillable = [
         'type'
     ];
+
+    public function vehicleModels()
+    {
+        return $this->hasMany(VehicleModel::class);
+    }
 }

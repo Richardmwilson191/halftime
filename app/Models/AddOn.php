@@ -14,4 +14,9 @@ class AddOn extends Model
         'desc',
         'cost',
     ];
+
+    public function rentalAddOn()
+    {
+        return $this->belongsTo(RentalAddOn::class);
+    }
 }

@@ -18,4 +18,14 @@ class Vehicle extends Model
         'cost_per_day',
         'is_available'
     ];
+
+    public function vehicleModels()
+    {
+        return $this->belongsTo(VehicleModel::class);
+    }
+
+    public function rentals()
+    {
+        return $this->hasMany(Rental::class);
+    }
 }

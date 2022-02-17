@@ -10,7 +10,6 @@ class Rental extends Model
     use HasFactory;
 
     public $fillable = [
-        'user_id',
         'vehicle_id',
         'transaction_id',
         'days_rented',
@@ -18,4 +17,19 @@ class Rental extends Model
         'end_dt',
         'date_returned',
     ];
+
+    public function vehicle()
+    {
+        return $this->belongsTo(Vehicle::class);
+    }
+
+    public function transaction()
+    {
+        return $this->belongsTo(Transaction::class);
+    }
+
+    public function addOns()
+    {
+        return $this->hasMany(AddOn::class);
+    }
 }
